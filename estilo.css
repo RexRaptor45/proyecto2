@@ -1,0 +1,83 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #1a1a2e, #16213e);
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Pantalla de inicio de sesión */
+#loginScreen {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #f4f4f4;
+}
+
+/* Inputs */
+form input[type="text"], 
+form input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Botones */
+button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #3944bc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4b59f7;
+}
+
+button[disabled] {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #ddd;
+}
+
+p button {
+    background: none;
+    border: none;
+    color: #00a8cc;
+    text-decoration: underline;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+p button:hover {
+    color: #00d4ff;
+}

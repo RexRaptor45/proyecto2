@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shooter 2D de Zombies - Menú y Reinicio</title>
+    <link rel="stylesheet" href="estilog.css">
+</head>
+<body>
+    <!-- Menú principal -->
+    <header id="menu">
+        <h1>Shooter 2D: Zombis</h1>
+        <button id="startGame">Jugar</button>
+        <button id="settings">Configuraciones</button>
+        <button id="credits">Créditos</button>
+        <p><button onclick="location.href='login.html'">salir</button></p>
+    </header>
+
+    <!-- Contenedor de juego -->
+    <main id="gameContainer" style="display: none;">
+        <h1>Juego de Shooter 2D: Zombies</h1>
+        <div class="score">Puntuación: <span id="score">0</span></div>
+        <canvas id="gameCanvas"></canvas>
+
+        <!-- Pantalla de Game Over -->
+        <section id="gameOverScreen" style="display: none;">
+            <h2>¡Juego Terminado!</h2>
+            <p>Puntuación final: <span id="finalScore">0</span></p>
+            <button id="restart">Reiniciar</button>
+            <button id="backToMenu">Volver al Menú</button>
+        </section>
+    </main>
+
+    <script src="code.js"></script>
+</body>
+</html>

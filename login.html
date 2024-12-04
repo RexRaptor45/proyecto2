@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión - Shooter 2D</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- Pantalla de Inicio de Sesión -->
+    <section id="loginScreen">
+        <h2>Iniciar Sesión</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Usuario" requiered>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <button type="submit" enabled>Entrar</button>
+        </form>
+        <p>¿No tienes cuenta? <button id="showRegister" disabled>Regístrate</button></p>
+        <p>¿Solo quieres probar? <button onclick="location.href='base.html'">Entrar como visitante</button></p>
+    </section>
+</body>
+</html>
